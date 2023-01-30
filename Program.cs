@@ -1,6 +1,6 @@
-﻿string Promt(string massage)
+﻿string Promt(string message)
 {
-    Console.WriteLine($"{massage}");
+    Console.WriteLine($"{message}");
     return Console.ReadLine();
 }
 
