@@ -21,12 +21,31 @@ void PrintArray(string[] array)
 }
 
 string [] CreateArray (string[] array)
-{
-    string[] TotalArray = new string[array.Length];
+{    
     int counter = 0;
     int signs = 0;
     int TotalCounter = 0;
-    while (counter < TotalArray.Length)
+    int TotalLength = 0;
+    while (counter < array.Length)
+    {
+        foreach(int el in array[counter])
+        {
+            signs ++; 
+        }
+        if(signs<= 3)
+        {
+            TotalLength ++;
+        }
+        signs = 0;
+        counter++;
+    }
+    
+    string[] TotalArray = new string[TotalLength];
+    counter = 0;
+    signs = 0;
+    TotalCounter = 0;
+
+    while (counter < array.Length)
     {
         foreach(int el in array[counter])
         {
