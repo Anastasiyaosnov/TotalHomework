@@ -83,7 +83,7 @@ if (int.TryParse(UserValue, out var UserLenght))
 
     if (ResultArray.Length < 1)
     {
-        Console.WriteLine("В этос массиве нет ни одной строки с длиной меньшей или равной 3. Новый массив пуст");
+        Console.WriteLine("В этом массиве нет ни одной строки с длиной меньшей или равной 3. Новый массив пуст");
     }
     else
     {
