@@ -9,7 +9,7 @@ string[] FillArray(int lenght)
     string[] first = new string[lenght];
     for (int i = 0; i < first.Length; i++)
     {
-        first[i] = Promt($"Введите строку {i+1}");
+        first[i] = Promt($"Введите строку {i + 1}");
     }
     return first;
 }
@@ -20,26 +20,26 @@ void PrintArray(string[] array)
         Console.Write($"'{array[i]}' ");
 }
 
-string [] CreateArray (string[] array)
-{    
+string[] CreateArray(string[] array)
+{
     int counter = 0;
     int signs = 0;
     int TotalCounter = 0;
     int TotalLength = 0;
     while (counter < array.Length)
     {
-        foreach(int el in array[counter])
+        foreach (int el in array[counter])
         {
-            signs ++; 
+            signs++;
         }
-        if(signs<= 3)
+        if (signs <= 3)
         {
-            TotalLength ++;
+            TotalLength++;
         }
         signs = 0;
         counter++;
     }
-    
+
     string[] TotalArray = new string[TotalLength];
     counter = 0;
     signs = 0;
@@ -47,14 +47,14 @@ string [] CreateArray (string[] array)
 
     while (counter < array.Length)
     {
-        foreach(int el in array[counter])
+        foreach (int el in array[counter])
         {
-            signs ++; 
+            signs++;
         }
-        if(signs<= 3)
+        if (signs <= 3)
         {
             TotalArray[TotalCounter] = array[counter];
-            TotalCounter ++;
+            TotalCounter++;
         }
         signs = 0;
         counter++;
@@ -63,18 +63,39 @@ string [] CreateArray (string[] array)
 }
 
 
+string UserValue = Promt("Планируется сформировать массив из некоторого количества элементов (слов, цифр, предложений и т.д.). Введите количество элементов в массиве");
 
-Console.WriteLine("Планируется сформировать массив из некоторого количества элементов (слов, цифр, предложений и т.д.). На данном этапе необходимо определить, сколько в этом массиве будет элементов. Введите количество элементов в массиве");
-int UserLenght =  Convert.ToInt32(Console.ReadLine());
+if (int.TryParse(UserValue, out var UserLenght))
 
-string[] UserArray = FillArray(UserLenght);
+{
+    string[] UserArray = FillArray(UserLenght);
 
-Console.WriteLine("Получился следующий массив строк");
+    Console.WriteLine();
+    Console.WriteLine("Получился следующий массив строк");
 
-PrintArray(UserArray);
+    PrintArray(UserArray);
 
-string[] ResultArray = CreateArray(UserArray);
+    string[] ResultArray = CreateArray(UserArray);
 
-Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine();
 
-PrintArray(ResultArray);
+
+    if (ResultArray.Length < 1)
+    {
+        Console.WriteLine("В этос массиве нет ни одной строки с длиной меньшей или равной 3. Новый массив пуст");
+    }
+    else
+    {
+        Console.WriteLine("Ниже новый массив, состоящий из тех строк первоначального массива, длина которых меньше трех");
+        PrintArray(ResultArray);
+    }
+
+    Console.WriteLine();
+}
+
+else
+{
+    Console.WriteLine("Некорректный ввод");
+}
+
