@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.AssemblyInfo.cs
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\bin\Debug\net6.0\total.exe
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\bin\Debug\net6.0\total.deps.json
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\bin\Debug\net6.0\total.runtimeconfig.json
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\bin\Debug\net6.0\total.dll
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\bin\Debug\net6.0\total.pdb
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.dll
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\refint\total.dll
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.pdb
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\total.genruntimeconfig.cache
+C:\Users\USER\Desktop\Geekbrains\Prog\C#\total\obj\Debug\net6.0\ref\total.dll
